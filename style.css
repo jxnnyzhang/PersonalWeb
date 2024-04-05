@@ -298,7 +298,18 @@ span {
 .about .heading {
     margin: 0;
 }
-
+#more-about-me {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.5s, max-height 0.5s;
+}
+.read-more {
+    transform: scaleY(1);
+    display: block;
+    height: auto;
+    opacity: 1;
+}
 .experience {
     padding: 100px 15px;
     background: var(--second-bg-color);
@@ -418,9 +429,8 @@ span {
     transform: scale(1.02);
 }
 .project-card img {
-    max-width: 20vw;
-    max-height: 18vh;
-    padding: 2rem;
+    max-width: 18vw;
+    object-fit: cover;
 }
 .project-card h3 {
     font-size: 3rem;

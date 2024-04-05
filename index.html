@@ -48,9 +48,14 @@
                         <h3 class="text-animation"><span></span></h3>
                             <p>I'm a junior at Case Western Reserve University with a passion for full-stack and front-end web development. I recently transitioned from a pre-med track to computer science due to my growing interest in technology.
                             I embarked on my web development journey with ChefBot as my first project, driving me to continuously enhance my expertise and keep pace with emerging technologies. My background in biology led to a pivotal moment in the Medical Technologies Club, where I automated a prototype for children with cerebral palsy using MATLAB, sparking my transition to a Computer Science major with minors in Finance and Biology. As a Product Operations Intern at Branch, I honed my skills in data analysis and automation, deepening my passion for software development. My enthusiasm led me to join my school's xLab program, collaborating with Progressive Insurance on projects to improve web interfaces and foster employee stress discussions, thus fueling my commitment to software development.
-                            When I'm not coding, you can find me staying active, experimenting in the kitchen, or enjoying quality time with friends at cafes.
                             </p>
-                            <a href="#" class="btn">Read More</a>
+                            <div id="more-about-me">
+                                <p>
+                                    When I'm not coding, you can find me staying active, experimenting in the kitchen, or enjoying quality time with friends at cafes. I'm a huge animal lover and have played many sports throughout my life — some of which include karate, gymnastics, tennis, and lacrosse.
+                                    I love trying new things and picking up new hobbies to keep myself entertained. I enjoy the thrill in life and am always seeking for opportunities to learn and grow as an individual!
+                                </p>
+                            </div>
+                            <a href="#" class="btn" id="read-more">Read More</a>
                         </div>
                     </div>
             </section>
@@ -113,18 +118,17 @@
                     for recipes and output the following recipes according to user input. This is a passion of mine as someone who started cooking since I was 10. 
                     I've always loved cooking for those around me and I wanted to come up with a way to make cooking easier and just as enjoyable for others as well.
                 </p>
-                <div class="btn">See Project</div>
+                <a href="http://www.chefbot.org" class="btn" target="_blank">See Project</a>
             </div>
 
             <div class="project-card">
                 <img src="sudoku.png" alt="">
                 <h3>Sudoku</h3>
-                <p>As part of my web development class, we had free will to design any game we wanted. I recently started going through a Sudoku phase, so I was inspired to recreate the game
-                    in a more fun and appealing way. It includes all the checks for basic rules, as well additional features such as a light and dark mode. When designing this game,
-                    I thought about how I could change the styling of the traditional Sudoku you would find on New York Times, and make it more "kid-friendly". I realized that having fun colors and 
-                    interactive buttons in certain fonts and styles draw more of a younger audience. I thought this would be a fun and enjoyable project not just for me, but all of my Sudoku lover friends as well!
+                <p>As part of my full-stack class, I was inspired to recreate the Sudoku game but in a more fun and appealing way. It includes all the checks for basic rules, as well additional features such as a light/dark mode. When designing this game,
+                    I thought about how I could change the styling of the traditional Sudoku you would find on New York Times, but make it more "kid-friendly". I realized that having fun colors and 
+                    interactive buttons in certain fonts/styles draw more of a younger audience. I thought this would be a fun and enjoyable project not just for me, but all of my Sudoku lover friends as well!
                 </p>
-                <div class="btn">See Project</div>
+                <a href="https://jxnnyzhang.github.io/SudokuGame/" class="btn" target="_blank">See Project</a>
             </div>
         </div>
     </section>
@@ -132,19 +136,19 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
 
-        <form action="">
+        <form action="https://formspree.io/f/mvoevprw" method="POST">
             <div class="input-group">
                 <div class="input-box">
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email">          
+                    <input type="text" name="fullName" placeholder="Full Name" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
                 </div>
                 <div class="input-box">
-                    <input type="number" placeholder="Phone Number">
-                    <input type="text" placeholder="Subject">
+                    <input type="number" name="phoneNumber" placeholder="Phone Number">
+                    <input type="email" name="email" placeholder="Email" required>
                 </div>
             </div>
             <div class="input-group-2">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
                 <input type="submit" value="Send Message" class="btn">
             </div>
         </form>
@@ -165,6 +169,8 @@
                 © Jenny Zhang | All Rights Reserved 2024
             </p>
         </footer>
+        <script src="formsubmit.js"></script>
+        <script src="readmore.js"></script>
         <script src="script.js"></script>
     </body>
 </html>
