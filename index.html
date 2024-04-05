@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jenny's Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <a href="#home" class="logo"> Jenny <span>Zhang</span></a>
+            
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+
+        <section class="home" id="home">
+            <div class="home-content">
+                <h1>Hi, It's <span>Jenny</span></h1>
+                <h3 class="text-animation"> I'm a <span></span></h3>
+                <p>I'm interested in building technologies using tech stacks such as JavaScript, 
+                    HTML/CSS, and more front-end works.</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/jennyzhang123/"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/jxnnyzhang"><i class='bx bxl-github'></i></a>
+                </div>
+                <div class="btn-group">
+                    <a href="#contact" class="btn">Contact</a>
+                </div>
+            </div>
+                <div class="home-img">
+                    <img src="headshots.jpg" alt="">
+                </div>
+        </section>
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="headshots.jpg" alt=""> </div>
+                <div class="about-content">
+                    <h2 class="heading">About<span> Me</span></h2>
+                        <h3 class="text-animation"><span></span></h3>
+                            <p>I'm a junior at Case Western Reserve University with a passion for full-stack and front-end web development. I recently transitioned from a pre-med track to computer science due to my growing interest in technology.
+                            I embarked on my web development journey with ChefBot as my first project, driving me to continuously enhance my expertise and keep pace with emerging technologies. My background in biology led to a pivotal moment in the Medical Technologies Club, where I automated a prototype for children with cerebral palsy using MATLAB, sparking my transition to a Computer Science major with minors in Finance and Biology. As a Product Operations Intern at Branch, I honed my skills in data analysis and automation, deepening my passion for software development. My enthusiasm led me to join my school's xLab program, collaborating with Progressive Insurance on projects to improve web interfaces and foster employee stress discussions, thus fueling my commitment to software development.
+                            When I'm not coding, you can find me staying active, experimenting in the kitchen, or enjoying quality time with friends at cafes.
+                            </p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </div>
+            </section>
+
+        <section class="experience" id="experience">
+        <h2 class="heading">Experience</h2>
+
+        <div class="timeline-items">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date"> January 2023 - July 2023</div>
+                    <div class="timeline-content">
+                        <h1>Branch</h1>
+                        <h2>Product Operations Intern</h2>
+                        <p> A startup insurance company where I started my journey pursuing technology
+                            as a fresh CS sophomore. I was tasked with roles relating to Product Operations, such as overseeing a 
+                            project management tool, conducting extensive data analysis, and performing ETL processes over large datasets.
+                        </p>
+                    </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date"> August 2023 - December 2023</div>
+                    <div class="timeline-content">
+                        <h1>Progessive</h1>
+                        <h2>Software Engineer Intern</h2>
+                        <p> As the biggest motor insurance carrier in the U.S., I was given the opportunity to work alongside fellow
+                            classmates here at Case Western to help mitigate employee stress levels through various features — some of which include
+                            providing employees with FitBit wearaables to monitor stress levels and sleep levels and another being wworking on implementing software features
+                            as resources for the employees to go to. I worked on developing a react-based calendar interface, where the employees could see their
+                            daily, weekly, monthly, and yearly schedules. This way, they could plan ahead for more stressful days and take breaks between meetings when needed.
+                        </p>
+                    </div>
+                </div>
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+                <div class="timeline-date">March 2024 - Present</div>
+                <div class="timeline-content">
+                    <h1>NEW EIC</h1>
+                    <h2>Software Development Engineer Intern</h2>
+                    <p> A startup quantitative investment firm where I further tackled obtaining software solutions in fast-paced environments
+                        to grow and apply my skills at a professional level. I am currently tasked with implementing the statistics dashboard feature 
+                        to demonstrate our numbers relating to the companys key performance levels, which will be calculated and consistently updated.
+                    </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="heading">Projects</h2>
+
+        <div class="projects-box">
+            <div class="project-card">
+                <img src="chefbot copy.png" alt="">
+
+                <h3>ChefBot</h3>
+                <p>Chefbot is designed to be a personalized chatbot chef to help beginner cooks easily find recipes
+                    by providing all the necessary information, ranging from ingredients needed to the cook time it'll take. 
+                    Using the idea of an AI chatbot as you would see when chatting with customer service, ChefBot aims to surf the EdamamAPI
+                    for recipes and output the following recipes according to user input. This is a passion of mine as someone who started cooking since I was 10. 
+                    I've always loved cooking for those around me and I wanted to come up with a way to make cooking easier and just as enjoyable for others as well.
+                </p>
+                <div class="btn">See Project</div>
+            </div>
+
+            <div class="project-card">
+                <img src="sudoku.png" alt="">
+                <h3>Sudoku</h3>
+                <p>As part of my web development class, we had free will to design any game we wanted. I recently started going through a Sudoku phase, so I was inspired to recreate the game
+                    in a more fun and appealing way. It includes all the checks for basic rules, as well additional features such as a light and dark mode. When designing this game,
+                    I thought about how I could change the styling of the traditional Sudoku you would find on New York Times, and make it more "kid-friendly". I realized that having fun colors and 
+                    interactive buttons in certain fonts and styles draw more of a younger audience. I thought this would be a fun and enjoyable project not just for me, but all of my Sudoku lover friends as well!
+                </p>
+                <div class="btn">See Project</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email">          
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Phone Number">
+                    <input type="text" placeholder="Subject">
+                </div>
+            </div>
+            <div class="input-group-2">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </div>
+        </form>
+    </section>
+
+        <footer class="footer">
+            <div class="social">
+                <a href="https://www.linkedin.com/in/jennyzhang123/"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/jxnnyzhang"><i class='bx bxl-github'></i></a>
+            </div>
+
+            <ul class="list">
+                <li>
+                    <a href="#">FAQ</a>
+                </li>
+            </ul>
+            <p class="copyright">
+                © Jenny Zhang | All Rights Reserved 2024
+            </p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
