@@ -64,7 +64,7 @@
         <h2 class="heading">Experience</h2>
 
         <div class="timeline-items">
-            <div class="timeline-item">
+            <div class="timeline-item" data-url="https://www.ourbranch.com/s/about">
                 <div class="timeline-dot"></div>
                     <div class="timeline-date"> January 2023 - July 2023</div>
                     <div class="timeline-content">
@@ -76,7 +76,7 @@
                         </p>
                     </div>
             </div>
-            <div class="timeline-item">
+            <div class="timeline-item" data-url="https://www.progressive.com">
                 <div class="timeline-dot"></div>
                     <div class="timeline-date"> August 2023 - December 2023</div>
                     <div class="timeline-content">
@@ -90,7 +90,7 @@
                         </p>
                     </div>
                 </div>
-        <div class="timeline-item">
+        <div class="timeline-item" data-url="https://www.neweicgroup.com/">
             <div class="timeline-dot"></div>
                 <div class="timeline-date">March 2024 - Present</div>
                 <div class="timeline-content">
@@ -163,6 +163,23 @@
                 © Jenny Zhang | All Rights Reserved 2024
             </p>
         </footer>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                // Select all timeline items
+                const timelineItems = document.querySelectorAll('.timeline-item');
+            
+                // Add click event listener to each item
+                timelineItems.forEach(item => {
+                    item.addEventListener('click', function() {
+                        const url = this.getAttribute('data-url'); // Get the URL from the data-url attribute
+                        if (url) {
+                            window.location.href = url; // Navigate to the URL
+                        }
+                    });
+                });
+            });
+            </script>  
+        <script src="scroll.js"></script>          
         <script src="formsubmit.js"></script>
         <script src="readmore.js"></script>
         <script src="script.js"></script>
