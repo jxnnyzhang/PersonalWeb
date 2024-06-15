@@ -384,6 +384,7 @@ span {
 }
 .timeline-content h2 {
     font-size: 15px;
+    font-style: italic;
     font-weight: 300;
     color: rgb(244, 241, 241);
     margin-bottom: 8px;
