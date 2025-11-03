@@ -3,6 +3,18 @@ let navbar = document.querySelector('.navbar');
 let section = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
+  // Smoke trail cursor effect
+  document.addEventListener('mousemove', e => {
+    const smoke = document.createElement('div');
+    smoke.className = 'smoke';
+    smoke.style.left = e.clientX + 'px'; // Use clientX for viewport-relative positioning
+    smoke.style.top = e.clientY + 'px'; // Use clientY for viewport-relative positioning
+    document.body.appendChild(smoke);
+
+    // Remove after animation ends
+    setTimeout(() => smoke.remove(), 1000);
+});
+
 window.onscroll = () => {
     section.forEach(sec => {
         let top = window.scrollY;
