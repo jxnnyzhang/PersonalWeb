@@ -550,6 +550,7 @@ section.alt {
 .project-title {
     font-size: clamp(3.6rem, 5vw, 5.6rem);
     margin-bottom: 1rem;
+    align-items: start;
 }
 .project-tagline {
     font-family: var(--font-display);
@@ -563,7 +564,6 @@ section.alt {
     display: grid;
     grid-template-columns: 1fr auto;
     gap: 5rem;
-    align-items: start;
 }
 .project-text {
     max-width: 620px;
@@ -577,8 +577,8 @@ section.alt {
     margin-bottom: 3rem;
 }
 .project-thumb {
-    width: 295px;
-    height: 200px;
+    width: 450px;
+    height: 300px;
     flex-shrink: 0;
     display: block;
     transition: opacity 0.3s ease;
@@ -589,7 +589,7 @@ section.alt {
 .project-thumb img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     border: 1.5px solid var(--line);
     border-radius: var(--radius);
 }
