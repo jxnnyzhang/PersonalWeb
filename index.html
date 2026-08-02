@@ -4,245 +4,436 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jenny's Portfolio Website</title>
+    <title>Jenny Zhang — Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
 </head>
 
 <body>
     <header class="header">
-        <a href="#home" class="logo"> Jenny <span>Zhang</span></a>
+        <div class="header-inner">
+            <a href="#home" class="logo">
+                <span class="mark">JZ</span>
+                <span class="word">Jenny <span>Zhang</span></span>
+            </a>
 
-        <i class='bx bx-menu' id="menu-icon"></i>
-        <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
 
-
     <section class="home" id="home">
-        <div class="home-content">
-            <h1>Hi, It's <span>Jenny</span></h1>
-            <h3 class="text-animation"> I'm a <span></span></h3>
-            <p>I'm interested in building technologies using tech stacks such as JavaScript,
-                TypeScript, React, Node, HTML/CSS, and more front-end works.</p>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/jennyzhang123/"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/jxnnyzhang"><i class='bx bxl-github'></i></a>
+        <div class="wrap">
+            <div class="home-content">
+                <div class="eyebrow hero-fade"><span class="text-animation"><span></span></span></div>
+                <h1 class="hero-fade">Hi, it's Jenny — I build software that feels <em>effortless</em> to use.</h1>
+                <p class="hero-fade">I work across JavaScript, TypeScript, Python, Java, React, and Node, with a focus on UI/UX.</p>
+                <div class="social-icons hero-fade">
+                    <a href="https://www.linkedin.com/in/jennyzhang123/"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/jxnnyzhang"><i class='bx bxl-github'></i></a>
+                </div>
+                <a href="#contact" class="btn hero-fade">Get in touch</a>
             </div>
-            <div class="btn-group">
-                <a href="#contact" class="btn">Contact</a>
+            <div class="home-img hero-fade">
+                <img src="headshots.jpg" alt="Jenny Zhang">
             </div>
-        </div>
-        <div class="home-img">
-            <img src="headshots.jpg" alt="">
         </div>
     </section>
+
     <section class="about" id="about">
-        <div class="about-img">
-            <img src="headshots.jpg" alt="">
-        </div>
-        <div class="about-content">
-            <h2 class="heading">About<span> Me</span></h2>
-            <h3 class="text-animation"><span></span></h3>
-            <p>I'm a recent graduate from Case Western Reserve University with a passion for full-stack and front-end
-                web development. I initially came into college on the pre-med track, but switched to computer science
-                due to my growing interest in technology.
-                I embarked on my web development journey with ChefBot as my first project, driving me to continuously
-                enhance my expertise and keep pace with emerging technologies. My background in biology led to a pivotal
-                moment in the Medical Technologies Club, where I automated a prototype for children with cerebral palsy
-                using MATLAB, sparking my transition to a Computer Science major with minors in Finance and Biology.
-            </p>
-            <div id="more-about-me">
-                <p>
-                    When I'm not coding, you can find me staying active, experimenting in the kitchen, or enjoying
-                    quality time with friends at cafes. I'm a huge animal lover and have played many sports throughout
-                    my life — some of which include karate, gymnastics, tennis, pickleball and lacrosse.
-                    I love trying new things and picking up new hobbies to keep myself entertained. I am always seeking
-                    for opportunities to learn and grow as an individual!
-                </p>
+        <div class="wrap">
+            <div class="eyebrow reveal">01 — About</div>
+            <div class="split">
+                <div class="about-content reveal">
+                    <h2>About <em>Me</em></h2>
+                    <p>I'm graduated from Case Western Reserve University with a passion for application development, full-stack, front-end web development, and AI/ML. 
+                        My background in biology on the pre-med track led to a pivotal moment when I joined the Medical Technologies Club, where I automated a
+                        prototype for children with cerebral palsy using MATLAB and other hardware tools like arduinos and 3D Modeling, sparking my transition to a Computer
+                        Science major with a minor in Finance and Banking.
+                        I embarked on my web development journey with ChefBot as my first project, driving me to
+                        continuously enhance my expertise and keep pace with emerging technologies. 
+                    </p>
+                </div>
+                <div class="about-side reveal">
+                    <div class="sidebar-label">Beyond the Code</div>
+                    <ul class="sidebar-list">
+                        <li>Cooking &amp; experimenting in the kitchen</li>
+                        <li>Pickleball, dance, pilates, working out &amp; lacrosse</li>
+                        <li>Cafe time with friends</li>
+                        <li>Huge animal lover — I've fostered 3 times now!</li>
+                    </ul>
+                </div>
             </div>
-            <a href="#" class="btn" id="read-more">Read More</a>
-        </div>
         </div>
     </section>
 
-    <section class="experience" id="experience">
-        <h2 class="heading">Experience</h2>
+    <section class="experience alt" id="experience">
+        <div class="wrap">
+            <div class="eyebrow reveal">02 — Experience</div>
 
-        <div class="timeline-items">
-            <div class="timeline-item" data-url="https://www.ourbranch.com/s/about">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date"> January 2023 - July 2023</div>
-                <div class="timeline-content">
-                    <h1>Branch</h1>
-                    <h2>Product Operations Intern</h2>
-                    <p> A startup insurance company where I started my journey pursuing technology
-                        as a fresh CS sophomore. I was tasked with roles relating to Product Operations, such as
-                        overseeing a
-                        project management tool, conducting extensive data analysis, and performing ETL processes over
-                        large datasets.
-                    </p>
+            <div class="exp-stepper reveal">
+                <div class="stepper-line"></div>
+                <button type="button" class="step" data-target="job-sherwin"><span class="dot">1</span><span class="step-label">Sherwin-Williams</span></button>
+                <button type="button" class="step" data-target="job-goodyear"><span class="dot">2</span><span class="step-label">Goodyear</span></button>
+                <button type="button" class="step" data-target="job-neweic"><span class="dot">3</span><span class="step-label">NEW EIC</span></button>
+                <button type="button" class="step" data-target="job-progressive"><span class="dot">4</span><span class="step-label">Progressive</span></button>
+                <button type="button" class="step" data-target="job-branch"><span class="dot">5</span><span class="step-label">Branch</span></button>
+            </div>
+
+            <div class="job reveal" id="job-sherwin" data-url="https://www.sherwin-williams.com/">
+                <div class="eyebrow">June 2025 – Present</div>
+                <h3 class="job-title">Sherwin-Williams</h3>
+
+                <div class="job-positions">
+                    <div class="job-position">
+                        <div class="job-content">
+                            <div class="job-main">
+                                <div class="position-date">June 2026 – Present</div>
+                                <div class="job-role">Associate Machine Learning Engineer — AI Product Delivery</div>
+                                <div class="job-body">
+                                    <p>Moving into a machine learning focused role within the same organization,
+                                        I've been building the pipelines and infrastructure behind Ask MIA —
+                                        Sherwin-Williams' internal LLM assistant.</p>
+                                </div>
+                            </div>
+                            <div class="job-side">
+                                <div class="tag-block">
+                                    <div class="tag-label">Highlights</div>
+                                    <ul>
+                                        <li>LLM intent-routing pipeline with guardrails — ~30% better classification
+                                            accuracy, ~22% fewer non-deterministic failures in production</li>
+                                        <li>Built and maintained a Python/FastAPI backend + API layer on AWS,
+                                            persisting feedback data to Snowflake for LLM quality metrics</li>
+                                        <li>Owned the Ask MIA UI end-to-end — ~50 reusable React/TypeScript
+                                            components, working cross-functionally with UX from spec to
+                                            production</li>
+                                    </ul>
+                                </div>
+                                <div class="tag-block">
+                                    <div class="tag-label">Skills</div>
+                                    <ul>
+                                        <li>Languages &amp; Frameworks: Python, FastAPI, React, TypeScript</li>
+                                        <li>Infra: AWS, Snowflake</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="job-position">
+                        <div class="job-content">
+                            <div class="job-main">
+                                <div class="position-date">June 2025 – June 2026</div>
+                                <div class="job-role">Full-Stack Developer Analyst — UX Design Systems</div>
+                                <div class="job-body">
+                                    <p>As a Full-Stack Developer Analyst on the UX Design Systems team, I helped
+                                        scale the design system used across Sherwin-Williams' internal
+                                        applications.</p>
+                                </div>
+                            </div>
+                            <div class="job-side">
+                                <div class="tag-block">
+                                    <div class="tag-label">Highlights</div>
+                                    <ul>
+                                        <li>Built React/JavaScript tooling to search and filter 800+ design tokens
+                                            and reusable components, improving data accessibility and UI
+                                            consistency at scale</li>
+                                        <li>Converted 100+ Figma variables into reusable, WCAG 2.2 AA-compliant
+                                            design tokens and components, reducing design debt and cross-team
+                                            rework</li>
+                                        <li>Architected an end-to-end analytics pipeline tracking design system
+                                            artifact usage across products, cutting analysis time ~99% and enabling
+                                            data-driven decision-making</li>
+                                    </ul>
+                                </div>
+                                <div class="tag-block">
+                                    <div class="tag-label">Skills</div>
+                                    <ul>
+                                        <li>Languages &amp; Frameworks: React, JavaScript</li>
+                                        <li>Tools: Figma, Design Tokens</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="timeline-item" data-url="https://www.progressive.com">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date"> August 2023 - December 2023</div>
-                <div class="timeline-content">
-                    <h1>Progessive</h1>
-                    <h2>Software Engineer Intern</h2>
-                    <p> As the biggest motor insurance carrier in the U.S., I was given the opportunity to work
-                        alongside fellow
-                        classmates here at Case Western to help mitigate employee stress levels through various features
-                        — some of which include
-                        providing employees with FitBit wearables to monitor stress levels and sleep levels and another
-                        being working on implementing software features
-                        as resources for the employees to go to. I worked on developing a react-based calendar
-                        interface, where the employees could see their
-                        daily, weekly, monthly, and yearly schedules. This way, they could plan ahead for more stressful
-                        days and take breaks between meetings when needed.
-                    </p>
+
+            <div class="job reveal" id="job-goodyear" data-url="https://corporate.goodyear.com/us/en.html">
+                <div class="eyebrow">May 2024 – August 2024</div>
+                <div class="job-content">
+                    <div class="job-main">
+                        <h3 class="job-title">Goodyear</h3>
+                        <div class="job-role">Full Stack Developer Intern — B2B Digital Solutions</div>
+                        <div class="job-body">
+                            <p>Being one of the top three tire manufacturers, I worked on TireHQ — Goodyear's B2B
+                                platform — rebuilding customer-facing repair workflows and supporting backend
+                                reporting features within an agile team.</p>
+                        </div>
+                    </div>
+                    <div class="job-side">
+                        <div class="tag-block">
+                            <div class="tag-label">Highlights</div>
+                            <ul>
+                                <li>Rebuilt TireHQ's deletion/swap flow allowing users access to repair
+                                    modifications with JavaScript and jQuery AJAX, addressing 5+ daily user
+                                    requests and reducing administrative load by ~35%</li>
+                                <li>Debugged Java-based report generation features, ensuring accurate Excel
+                                    output and adherence to project timelines following agile methodologies</li>
+                            </ul>
+                        </div>
+                        <div class="tag-block">
+                            <div class="tag-label">Skills</div>
+                            <ul>
+                                <li>Languages &amp; Frameworks: Java, JavaScript, jQuery (AJAX)</li>
+                                <li>Tools: Excel</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="timeline-item" data-url="https://www.neweicgroup.com/">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">March 2024 - May 2024</div>
-                <div class="timeline-content">
-                    <h1>NEW EIC</h1>
-                    <h2>Software Development Engineer Intern</h2>
-                    <p> A startup quantitative investment firm where I further tackled obtaining software solutions in
-                        fast-paced environments
-                        to grow and apply my skills at a professional level. I am currently tasked with implementing the
-                        statistics dashboard feature
-                        to demonstrate our numbers relating to the companys key performance levels, which will be
-                        calculated and consistently updated.
-                    </p>
+
+            <div class="job reveal" id="job-neweic" data-url="https://www.neweicgroup.com/">
+                <div class="eyebrow">March 2024 – May 2024</div>
+                <div class="job-content">
+                    <div class="job-main">
+                        <h3 class="job-title">NEW EIC</h3>
+                        <div class="job-role">Software Development Engineer Intern — Investment Platform</div>
+                        <div class="job-body">
+                            <p>A startup quantitative investment firm where I helped build a MERN stack education
+                                platform and a real-time statistics dashboard for the investor platform.</p>
+                        </div>
+                    </div>
+                    <div class="job-side">
+                        <div class="tag-block">
+                            <div class="tag-label">Highlights</div>
+                            <ul>
+                                <li>Helped build a MERN stack-based quantitative education platform serving ~1000
+                                    users; designed for scalability to support migration to the investor
+                                    platform</li>
+                                <li>Built and integrated a MUI statistics dashboard end-to-end, rendering 5+ key
+                                    portfolio metrics in real time</li>
+                            </ul>
+                        </div>
+                        <div class="tag-block">
+                            <div class="tag-label">Skills</div>
+                            <ul>
+                                <li>Languages &amp; Frameworks: MongoDB, Express, React, Node.js (MERN), MUI</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="timeline-item" data-url="https://corporate.goodyear.com/us/en.html">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">May 2024 - August 2024</div>
-                <div class="timeline-content">
-                    <h1>Goodyear Tire and Rubber Company</h1>
-                    <h2>Software Development Intern — America's B2B Digital Solutions</h2>
-                    <p> Being one of the top three tire manufacturers, I was tasked with working on the TireHQ site.
-                        Tire-HQ is the core of Goodyear Digital
-                        experience for our B2B customers, the platform has been a critical touch point for direct and
-                        indirect customers. I worked with a plethora
-                        of tech stacks to seamlessly integrate modern functionalities to the site for enhanced user
-                        interface and experience — providing the option to
-                        flexibly delete, un-delete, and swap repair orders directly through the site. Automating this
-                        process not only improved the user experience, but
-                        also reduced complexity on the development team by 63%.
-                    </p>
+
+            <div class="job reveal" id="job-progressive" data-url="https://www.progressive.com">
+                <div class="eyebrow">August 2023 – December 2023</div>
+                <div class="job-content">
+                    <div class="job-main">
+                        <h3 class="job-title">Progressive</h3>
+                        <div class="job-role">Software Engineer Intern — Employee Dashboard</div>
+                        <div class="job-body">
+                            <p>As the biggest motor insurance carrier in the U.S., I worked alongside fellow Case
+                                Western students to help mitigate employee stress through a custom internal
+                                scheduling tool.</p>
+                        </div>
+                    </div>
+                    <div class="job-side">
+                        <div class="tag-block">
+                            <div class="tag-label">Highlights</div>
+                            <ul>
+                                <li>Designed and built a custom React-based calendar interface using
+                                    Node.js/TypeScript, promoting wellness breaks and proactive scheduling</li>
+                                <li>Designed a real-time data synchronization solution with OAuth2.0 and Outlook to
+                                    keep calendar state dynamic and continuously updated</li>
+                            </ul>
+                        </div>
+                        <div class="tag-block">
+                            <div class="tag-label">Skills</div>
+                            <ul>
+                                <li>Languages &amp; Frameworks: React, Node.js, TypeScript</li>
+                                <li>Tools: OAuth2.0</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="timeline-item" data-url="https://www.sherwin-williams.com/">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">June 2025 - Present</div>
-                <div class="timeline-content">
-                    <h1>Sherwin Williams</h1>
-                    <h2>Frontend Developer I — UX Design Systems</h2>
-                    <p> Being the top within the paint industry, I translated over 40 Figma design tokens into scalable React components using MUI v6, enhancing
-                        design consistency and speeding up development across 10+ internal applications. I implemented
-                        WCAG 2.2 AA accessibility standards and built comprehensive automated tests with Jest, React
-                        Testing Library, and Cypress, achieving over 95% coverage for core UI components.
-                    </p>
+
+            <div class="job reveal" id="job-branch" data-url="https://www.ourbranch.com/s/about">
+                <div class="eyebrow">January 2023 – July 2023</div>
+                <div class="job-content">
+                    <div class="job-main">
+                        <h3 class="job-title">Branch</h3>
+                        <div class="job-role">Product Operations Intern</div>
+                        <div class="job-body">
+                            <p>A startup insurance company where I started my journey pursuing technology as a fresh
+                                CS sophomore. I was tasked with roles relating to Product Operations, such as
+                                overseeing a project management tool, conducting extensive data analysis, and
+                                performing ETL processes over large datasets.</p>
+                        </div>
+                    </div>
+                    <div class="job-side">
+                        <div class="tag-block">
+                            <div class="tag-label">Highlights</div>
+                            <ul>
+                                <li>Built and owned a project management tool end-to-end</li>
+                                <li>Extensive data analysis</li>
+                                <li>ETL processes over large datasets</li>
+                            </ul>
+                        </div>
+                        <div class="tag-block">
+                            <div class="tag-label">Skills</div>
+                            <ul>
+                                <li>Tools: Excel, Asana, Qlik, Verisk, Lucidchart</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
     </section>
 
     <section class="projects" id="projects">
-        <h2 class="heading">Ongoing Projects</h2>
+        <div class="wrap">
+            <svg class="diagram reveal" viewBox="0 0 400 120" aria-hidden="true">
+                <path class="diagram-line strong draw-line" style="--len:420" d="M20,90 C120,10 180,110 260,40 C300,5 340,60 380,30" />
+                <circle class="diagram-dot filled" cx="20" cy="90" r="5"></circle>
+                <circle class="diagram-dot" cx="140" cy="35" r="5"></circle>
+                <circle class="diagram-dot" cx="260" cy="40" r="5"></circle>
+                <circle class="diagram-dot filled" cx="380" cy="30" r="5"></circle>
+            </svg>
+            <div class="eyebrow reveal">03 — Projects</div>
 
-        <div class="projects-box">
-            <div class="project-card">
-                <img src="chefbot copy.png" alt="">
-
-                <h3>ChefBot</h3>
-                <p>Chefbot is designed to be a personalized chatbot chef to help beginner cooks easily find recipes
-                    by providing all the necessary information, ranging from ingredients needed to the cook time it'll
-                    take.
-                    Using the idea of an AI chatbot as you would see when chatting with customer service, ChefBot aims
-                    to surf the EdamamAPI
-                    for recipes and output the following recipes according to user input. This is a passion of mine as
-                    someone who started cooking since I was 10.
-                    I've always loved cooking for those around me and I wanted to come up with a way to make cooking
-                    easier and just as enjoyable for others as well.
-                </p>
-                <a href="http://www.chefbot.org" class="btn" target="_blank">See Project</a>
+            <div class="project project-first reveal">
+                <div class="project-title">ChefBot</div>
+                <div class="project-head">
+                    <div class="project-text">
+                        <div class="project-tagline">A personalized chatbot chef for beginner cooks.</div>
+                        <div class="project-body">
+                            <p>Chefbot is designed to be a personalized chatbot chef to help beginner cooks easily
+                                find recipes by providing all the necessary information, ranging from ingredients
+                                needed to the cook time it'll take. Using the idea of an AI chatbot as you would see
+                                when chatting with customer service, ChefBot aims to surf the Edamam API for recipes
+                                and output the following recipes according to user input. This is a passion of mine
+                                as someone who started cooking since I was 10 — I've always loved cooking for those
+                                around me and wanted to make it easier and just as enjoyable for others.</p>
+                            <a href="https://jxnnyzhang.github.io/ChefBot/" class="btn" target="_blank">See project</a>
+                        </div>
+                    </div>
+                    <a class="project-thumb" href="https://jxnnyzhang.github.io/ChefBot/" target="_blank"><img src="chefbot copy.png" alt="ChefBot recipe interface"></a>
+                </div>
+                <div class="project-bottom">
+                    <div class="tag-block">
+                        <div class="tag-label">Built with</div>
+                        <ul>
+                            <li>Edamam Recipe Search API</li>
+                            <li>Chatbot-style UI</li>
+                            <li>Cloudfare Worker Proxy</li>
+                            <li>HTML / CSS / JS / Node.js</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
-            <div class="project-card">
-                <img src="sudoku.png" alt="">
-                <h3>Sudoku</h3>
-                <p>As part of my full-stack class, I was inspired to recreate the Sudoku game but in a more fun and
-                    appealing way. It includes all the checks for basic rules, as well additional features such as a
-                    light/dark mode. When designing this game,
-                    I thought about how I could change the styling of the traditional Sudoku you would find on New York
-                    Times, but make it more "kid-friendly". I realized that having fun colors and
-                    interactive buttons in certain fonts/styles draw more of a younger audience. I thought this would be
-                    a fun and enjoyable project not just for me, but all of my Sudoku lover friends as well!
-                </p>
-                <a href="https://jxnnyzhang.github.io/SudokuGame/" class="btn" target="_blank">See Project</a>
+            <div class="project reveal">
+                <div class="project-title">Sudoku</div>
+                <div class="project-head">
+                    <div class="project-text">
+                        <div class="project-tagline">A classic puzzle reimagined with a fun, kid-friendly interface.</div>
+                        <div class="project-body">
+                            <p>As part of my full-stack class, I was inspired to recreate the Sudoku game but in a
+                                more fun and appealing way. It includes all the checks for basic rules, as well as
+                                additional features such as a light/dark mode. When designing this game, I thought
+                                about how I could change the styling of the traditional Sudoku you'd find on the New
+                                York Times, but make it more "kid-friendly." I realized that fun colors and
+                                interactive buttons in certain fonts/styles draw more of a younger audience.</p>
+                            <a href="https://jxnnyzhang.github.io/SudokuGame/" class="btn" target="_blank">See project</a>
+                        </div>
+                    </div>
+                    <a class="project-thumb" href="https://jxnnyzhang.github.io/SudokuGame/" target="_blank"><img src="sudoku.png" alt="Sudoku game interface"></a>
+                </div>
+                <div class="project-bottom">
+                    <div class="tag-block">
+                        <div class="tag-label">Built with</div>
+                        <ul>
+                            <li>Custom game logic</li>
+                            <li>Light / dark mode</li>
+                            <li>HTML / CSS / JS</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
+    <section class="contact alt" id="contact">
+        <div class="wrap">
+            <div class="eyebrow reveal">04 — Contact</div>
+            <h2 class="reveal">Get in <em>touch</em>.</h2>
 
-        <form action="https://formspree.io/f/mvoevprw" method="POST">
-            <div class="input-group">
-                <div class="input-box">
-                    <input type="text" name="fullName" placeholder="Full Name" required>
-                    <input type="text" name="subject" placeholder="Subject" required>
+            <form class="reveal" id="my-form" action="https://formspree.io/f/mvoevprw" method="POST">
+                <div class="field-row">
+                    <div class="field">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Your name" required>
+                    </div>
+                    <div class="field">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                    </div>
                 </div>
-                <div class="input-box">
-                    <input type="number" name="phoneNumber" placeholder="Phone Number">
-                    <input type="email" name="email" placeholder="Email" required>
+                <div class="field-row">
+                    <div class="field">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="number" id="phoneNumber" name="phoneNumber" placeholder="Optional">
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
                 </div>
-            </div>
-            <div class="input-group-2">
-                <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
-                <input type="submit" value="Send Message" class="btn">
-            </div>
-        </form>
+                <div class="field">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="4" placeholder="Say hello" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send message</button>
+                <p id="my-form-status"></p>
+            </form>
+        </div>
     </section>
 
     <footer class="footer">
-        <div class="social">
-            <a href="https://www.linkedin.com/in/jennyzhang123/"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://github.com/jxnnyzhang"><i class='bx bxl-github'></i></a>
+        <div class="wrap footer-inner">
+            <p class="copyright">© Jenny Zhang — All Rights Reserved 2025</p>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/jennyzhang123/"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/jxnnyzhang"><i class='bx bxl-github'></i></a>
+            </div>
         </div>
-        <p class="copyright">
-            © Jenny Zhang | All Rights Reserved 2025
-        </p>
     </footer>
+
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // Select all timeline items
-            const timelineItems = document.querySelectorAll('.timeline-item');
-
-            // Add click event listener to each item
-            timelineItems.forEach(item => {
+            document.querySelectorAll('.job').forEach(item => {
                 item.addEventListener('click', function () {
-                    const url = this.getAttribute('data-url'); // Get the URL from the data-url attribute
-                    if (url) {
-                        window.location.href = url; // Navigate to the URL
-                    }
+                    const url = this.getAttribute('data-url');
+                    if (url) window.location.href = url;
                 });
             });
         });
     </script>
     <script src="scroll.js"></script>
     <script src="formsubmit.js"></script>
-    <script src="readmore.js"></script>
     <script src="script.js"></script>
+    <script src="reveal.js"></script>
 </body>
 
 </html>
