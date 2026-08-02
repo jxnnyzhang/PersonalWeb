@@ -344,8 +344,9 @@ section.alt {
     transform: translateY(-3px);
 }
 .home-img img {
-    width: 100%;
-    aspect-ratio: 4/5;
+    width: 450px;
+    height: 490px;
+    aspect-ratio: 1/1;
     object-fit: cover;
     border: 1.5px solid var(--line);
     border-radius: var(--radius);
